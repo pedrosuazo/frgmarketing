@@ -1,14 +1,13 @@
-@extends('layouts.app')
+@extends('layouts.auth_layout')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+
+
+
+                    <form class="form-horizontal form-signin" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
+
+                        <h2 class="form-signin-heading">Please sign in</h2>
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
@@ -60,9 +59,9 @@
                             </div>
                         </div>
                     </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
+
+
+
+
 @endsection
