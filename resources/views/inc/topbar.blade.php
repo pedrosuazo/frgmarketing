@@ -137,7 +137,7 @@
                         <div class="dropdown-menu dropdown-menu-right dropdown-arrow profile-dropdown " aria-labelledby="Preview">
                             <!-- item-->
                             <div class="dropdown-item noti-title">
-                                <h5 class="text-overflow"><small>Hi, {{ Auth::user()->name }}</small> </h5>
+                                <h5 class="text-overflow"><small>Hi, Pedro</small> </h5>
                             </div>
 
                             <!-- item-->
@@ -156,11 +156,8 @@
                             </a>
 
                             <!-- item-->
-                            <a href="{{ route('logout') }}"
-                               onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();" class="dropdown-item notify-item">
-                                @if (Auth::guest())
-                                @else
+                            <a href="#"
+
                                 <i class="zmdi zmdi-power"></i> <span>
 
 
@@ -168,12 +165,10 @@
                                             Logout
 
 
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
+
 
                                     </span>
-                                @endif
+
 
                             </a>
 
