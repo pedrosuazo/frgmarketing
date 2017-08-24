@@ -21,6 +21,9 @@
     <!-- Switchery css -->
     <link href="{{ URL::to('assets/plugins/switchery/switchery.min.css') }}" rel="stylesheet" />
 
+    <!--calendar css-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" />
+
     <!-- App CSS -->
     <link href="{{ URL::to('assets/css/style.css') }}" rel="stylesheet" type="text/css" />
 
@@ -74,16 +77,22 @@
         <script src="{{ URL::to('assets/plugins/switchery/switchery.min.js') }}"></script>
 
         <!--Morris Chart-->
-        <script src="{{ URL::to('assets/plugins/morris/morris.min.js') }}"></script>
-        <script src="{{ URL::to('assets/plugins/raphael/raphael-min.js') }}"></script>
+        {{--<script src="{{ URL::to('assets/plugins/morris/morris.min.js') }}"></script>--}}
+        {{--<script src="{{ URL::to('assets/plugins/raphael/raphael-min.js') }}"></script>--}}
 
         <!-- Counter Up  -->
-        <script src="{{ URL::to('assets/plugins/waypoints/lib/jquery.waypoints.js') }}"></script>
-        <script src="{{ URL::to('assets/plugins/counterup/jquery.counterup.min.js') }}"></script>
+        {{--<script src="{{ URL::to('assets/plugins/waypoints/lib/jquery.waypoints.js') }}"></script>--}}
+        {{--<script src="{{ URL::to('assets/plugins/counterup/jquery.counterup.min.js') }}"></script>--}}
 
         <!-- App js -->
         <script src="{{ URL::to('assets/js/jquery.core.js') }}"></script>
         <script src="{{ URL::to('assets/js/jquery.app.js') }}"></script>
+
+<!-- BEGIN PAGE SCRIPTS -->
+<script src="{{ URL::to('assets/plugins/moment/moment.js') }}"></script>
+<script src="{{ URL::to('assets/plugins/fullcalendar/3.4/fullcalendar.min.js') }}"></script>
+<script src="{{ URL::to('assets/pages/jquery.dashboardcalendar.js') }}"></script>
+
 
         <!-- Page specific js -->
         <script src="{{ URL::to('assets/pages/jquery.dashboard.js') }}"></script>

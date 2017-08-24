@@ -28,20 +28,23 @@
 
 <div class="row">
     <!-- feature projects-->
-    <div class="col-xs-12 col-lg-12 col-xl-4">
-
-        <div class="card">
-            <h3 class="card-header">Feature Projects</h3>
-            <div class="card-block">
-                <h4 class="card-title">Special title treatment</h4>
-                <p class="card-text">With supporting text below as a natural lead-in to
-                    additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+    <div class="col-md-4">
 
 
+
+        <div class="card-box">
+            <h4 class="header-title m-t-0 m-b-20">Sales Statistics</h4>
+
+            <p class="font-600 m-b-5">
+                <span class="label label-success">Marketing Team</span>
+                <span class="label label-default">Due date:</span> Tuesday, November 11, 2001
+
+                <span class="text-danger pull-right"><b>79%</b></span></p>
+            <progress class="progress progress-striped progress-xs progress-danger m-b-0" value="79" max="100">79%
+            </progress>
+            <hr>
+            <div class="inbox-item-img"><img src="assets/images/users/avatar-1.jpg" class="img-circle" alt="" width="10%"></div>
         </div>
-
         <div class="card-box">
             <h4 class="header-title m-t-0 m-b-20">Sales Statistics</h4>
 
@@ -57,11 +60,15 @@
         </div>
 
     </div>
-</div><!-- //feature projects-->
+<!-- //feature projects-->
 
 
 <!-- calendar-->
-    <div class="col-xs-12 col-lg-12 col-xl-8">
+    <div class="col-md-8">
+
+            <div id="calendar"></div>
+
+
 
 
     </div><!-- //calendar-->
