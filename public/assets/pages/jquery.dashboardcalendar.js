@@ -79,7 +79,8 @@ $(document).ready(function() {
             {
                 title: 'Click for Google',
                 url: 'http://google.com/',
-                start: '2017-08-23'
+                start: '2017-08-25T10:30:00',
+                end: '2017-08-26T12:30:00'
             }
         ]
     });
